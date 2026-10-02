@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pending Work — Study Plan</title>
+<link rel="stylesheet" href="assets/style.css">
+<noscript><style>.page-transition{display:none!important}</style></noscript>
+</head>
+<body>
+<div class="page-transition" id="pageTransition">
+  <div class="loader-wrap">
+    <div class="loader-light"><span></span><span></span><span></span></div>
+    <div class="loader-dark"></div>
+    <div class="loader-reading">📖</div>
+    <div class="label">লোড হচ্ছে…</div>
+  </div>
+</div>
+<nav class="navbar no-print">
+  <a class="nav-brand" href="index.html">📚 Study Plan</a>
+  <div class="nav-mid">
+    <a class="nav-link" href="index.html">🏠 Home</a><a class="nav-link" href="routine.html">📅 Routine</a><a class="nav-link" href="today.html">🔵 Today's Classes</a><a class="nav-link" href="tomorrow.html">⏭ Tomorrow</a><a class="nav-link current" href="pending.html">📌 Pending Work (জমে থাকা কাজ)</a><a class="nav-link" href="study-time.html">⏱ Study Time</a><a class="nav-link" href="history.html">🗂 History</a><a class="nav-link" href="uploaded-files.html">📎 Uploaded Files</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn small" id="themeBtn" onclick="cycleTheme()" type="button"></button>
+  </div>
+</nav>
+<div class="wrap">
+<div class="page-head"><h2>Pending Work (জমে থাকা কাজ)</h2></div>
+<section class="card" id="pending">
+  <form id="pendingForm" class="pending-add">
+    <div class="grid">
+      <div class="field"><label for="pendingType">Type</label><select id="pendingType" name="type"><option>Sessional</option><option>Assignment</option><option>Job</option><option>Others</option></select></div>
+      <div class="field"><label for="pendingSubject">Subject</label><select id="pendingSubject" name="subject"><option value="math3">Mathematics-3</option><option value="python">Python App Dev</option><option value="social">Social Science</option><option value="phy2">Physics-2</option><option value="itss">IT Support Services</option><option value="dgtl">Digital Electronics</option><option value="gfx2">Graphics Design-2</option></select></div>
+      <div class="field"><label for="pendingTopic">Chapter or Topic</label><input id="pendingTopic" name="topic" placeholder="Chapter or Topic"></div>
+      <div class="field"><label for="pagesWritten">Pages Written</label><input id="pagesWritten" name="pagesWritten" type="number" min="0" inputmode="numeric" placeholder="Pages Written"></div>
+      <div class="field"><label for="pagesLeft">Pages Left</label><input id="pagesLeft" name="pagesLeft" type="number" min="0" inputmode="numeric" placeholder="Pages Left"></div>
+      <div class="field"><label for="pendingDeadline">Deadline</label><input id="pendingDeadline" name="deadline" type="date"></div>
+    </div>
+    <div class="field note"><label for="pendingNote">Extra Note</label><textarea id="pendingNote" name="note" placeholder="Extra Note"></textarea></div>
+    <div class="row section-actions"><button class="btn primary" type="submit">Add</button><button class="btn danger" id="resetPending" type="reset">Reset</button></div>
+    <div class="status noscript-status">Use Add to submit this form. All fields and native form controls remain usable without JavaScript; browser persistence needs the optional storage layer.</div>
+    <div class="status js-status" id="pendingStatus" aria-live="polite"></div>
+  </form>
+  <div id="pendingList" class="pending-list">
+    <div class="empty">এখনো কোনো পেন্ডিং কাজ যোগ করা হয়নি।</div>
+  </div>
+</section>
+<footer class="endnote">Study Plan<br><span class="credit">Design by Md Mahim Hossain</span></footer>
+</div>
+<div id="toast" class="toast" aria-live="polite"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

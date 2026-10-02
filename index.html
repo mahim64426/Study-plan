@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Home — Study Plan</title>
+<link rel="stylesheet" href="assets/style.css">
+<noscript><style>.page-transition{display:none!important}</style></noscript>
+</head>
+<body>
+<div class="page-transition" id="pageTransition">
+  <div class="loader-wrap">
+    <div class="loader-light"><span></span><span></span><span></span></div>
+    <div class="loader-dark"></div>
+    <div class="loader-reading">📖</div>
+    <div class="label">লোড হচ্ছে…</div>
+  </div>
+</div>
+<nav class="navbar no-print">
+  <a class="nav-brand" href="index.html">📚 Study Plan</a>
+  <div class="nav-mid">
+    <a class="nav-link current" href="index.html">🏠 Home</a><a class="nav-link" href="routine.html">📅 Routine</a><a class="nav-link" href="today.html">🔵 Today's Classes</a><a class="nav-link" href="tomorrow.html">⏭ Tomorrow</a><a class="nav-link" href="pending.html">📌 Pending Work (জমে থাকা কাজ)</a><a class="nav-link" href="study-time.html">⏱ Study Time</a><a class="nav-link" href="history.html">🗂 History</a><a class="nav-link" href="uploaded-files.html">📎 Uploaded Files</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn small" id="themeBtn" onclick="cycleTheme()" type="button"></button>
+  </div>
+</nav>
+<div class="wrap">
+<div class="page-head"><h1>Study Plan</h1></div>
+<p class="meta" style="margin-bottom:16px">Mobile-first study &amp; class management — pick a section below.</p>
+<div class="hub-grid">
+  <a class="hub-card" href="routine.html"><div class="ic">📅</div><div class="t">Routine</div></a><a class="hub-card" href="today.html"><div class="ic">🔵</div><div class="t">Today's Classes</div></a><a class="hub-card" href="tomorrow.html"><div class="ic">⏭</div><div class="t">Tomorrow</div></a><a class="hub-card" href="pending.html"><div class="ic">📌</div><div class="t">Pending Work (জমে থাকা কাজ)</div></a><a class="hub-card" href="study-time.html"><div class="ic">⏱</div><div class="t">Study Time</div></a><a class="hub-card" href="history.html"><div class="ic">🗂</div><div class="t">History</div></a><a class="hub-card" href="uploaded-files.html"><div class="ic">📎</div><div class="t">Uploaded Files</div></a>
+</div>
+<footer class="endnote">Study Plan<br><span class="credit">Design by Md Mahim Hossain</span></footer>
+</div>
+<div id="toast" class="toast" aria-live="polite"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

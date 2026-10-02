@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Routine — Study Plan</title>
+<link rel="stylesheet" href="assets/style.css">
+<noscript><style>.page-transition{display:none!important}</style></noscript>
+</head>
+<body>
+<div class="page-transition" id="pageTransition">
+  <div class="loader-wrap">
+    <div class="loader-light"><span></span><span></span><span></span></div>
+    <div class="loader-dark"></div>
+    <div class="loader-reading">📖</div>
+    <div class="label">লোড হচ্ছে…</div>
+  </div>
+</div>
+<nav class="navbar no-print">
+  <a class="nav-brand" href="index.html">📚 Study Plan</a>
+  <div class="nav-mid">
+    <a class="nav-link" href="index.html">🏠 Home</a><a class="nav-link current" href="routine.html">📅 Routine</a><a class="nav-link" href="today.html">🔵 Today's Classes</a><a class="nav-link" href="tomorrow.html">⏭ Tomorrow</a><a class="nav-link" href="pending.html">📌 Pending Work (জমে থাকা কাজ)</a><a class="nav-link" href="study-time.html">⏱ Study Time</a><a class="nav-link" href="history.html">🗂 History</a><a class="nav-link" href="uploaded-files.html">📎 Uploaded Files</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn small" id="themeBtn" onclick="cycleTheme()" type="button"></button>
+  </div>
+</nav>
+<div class="wrap">
+<div class="page-head"><h2>Routine</h2></div>
+<div class="card routine-page">
+  <div class="routine-tabs no-print"><button class="btn small routine-tab" type="button" data-routine-day="routine-sun">Sunday</button><button class="btn small routine-tab" type="button" data-routine-day="routine-mon">Monday</button><button class="btn small routine-tab" type="button" data-routine-day="routine-tue">Tuesday</button><button class="btn small routine-tab" type="button" data-routine-day="routine-wed">Wednesday</button><button class="btn small routine-tab" type="button" data-routine-day="routine-thu">Thursday</button></div>
+  <div id="routine-sun" class="routine-day"><h3>Sunday</h3><div class="routine-row"><div class="time">08:00–09:30</div><div><b>Mathematics-3</b><div class="meta">Theory</div></div><div class="room">Room 308</div></div><div class="routine-row"><div class="time">09:30–10:15</div><div><b>Python App Dev</b><div class="meta">Theory</div></div><div class="room">Room 302</div></div><div class="routine-row"><div class="time">10:15–11:00</div><div><b>IT Support Services</b><div class="meta">Theory</div></div><div class="room">Room 302</div></div><div class="routine-row"><div class="time">11:00–13:15</div><div><b>Digital Electronics</b><div class="meta">Practical</div></div><div class="room">Digital Electronics Lab</div></div></div>
+  <div id="routine-mon" class="routine-day"><h3>Monday</h3><div class="routine-row"><div class="time">08:00–10:15</div><div><b>IT Support Services</b><div class="meta">Practical</div></div><div class="room">Hardware Lab</div></div><div class="routine-row"><div class="time">10:15–11:00</div><div><b>Social Science</b><div class="meta">Theory</div></div><div class="room">Room 302</div></div><div class="routine-row"><div class="time">11:00–13:15</div><div><b>Physics-2</b><div class="meta">Practical</div></div><div class="room">Chemistry Lab</div></div></div>
+  <div id="routine-tue" class="routine-day"><h3>Tuesday</h3><div class="routine-row"><div class="time">08:00–10:15</div><div><b>Graphics Design-2</b><div class="meta">Practical</div></div><div class="room">Software Lab</div></div><div class="routine-row"><div class="time">10:15–11:00</div><div><b>Physics-2</b><div class="meta">Theory</div></div><div class="room">Room 303</div></div><div class="routine-row"><div class="time">11:00–13:15</div><div><b>Python App Dev</b><div class="meta">Practical</div></div><div class="room">Software Lab</div></div></div>
+  <div id="routine-wed" class="routine-day"><h3>Wednesday</h3><div class="routine-row"><div class="time">08:00–09:30</div><div><b>Mathematics-3</b><div class="meta">Theory</div></div><div class="room">Room 308</div></div><div class="routine-row"><div class="time">09:30–10:15</div><div><b>Digital Electronics</b><div class="meta">Theory</div></div><div class="room">Room 308</div></div><div class="routine-row"><div class="time">10:15–11:00</div><div><b>Python App Dev</b><div class="meta">Theory</div></div><div class="room">Room 308</div></div><div class="routine-row"><div class="time">11:00–11:45</div><div><b>Social Science</b><div class="meta">Theory</div></div><div class="room">Room 308</div></div><div class="routine-row"><div class="time">11:45–12:30</div><div><b>Physics-2</b><div class="meta">Theory</div></div><div class="room">Room 308</div></div><div class="routine-row"><div class="time">12:30–13:15</div><div><b>IT Support Services</b><div class="meta">Theory</div></div><div class="room">Room 308</div></div></div>
+  <div id="routine-thu" class="routine-day"><h3>Thursday</h3><div class="routine-row"><div class="time">08:00–10:15</div><div><b>IT Support Services</b><div class="meta">Practical</div></div><div class="room">Hardware Lab</div></div><div class="routine-row"><div class="time">10:15–11:45</div><div><b>Mathematics-3</b><div class="meta">Theory</div></div><div class="room">Room 308</div></div><div class="routine-row"><div class="time">11:45–12:30</div><div><b>Physics-2</b><div class="meta">Theory</div></div><div class="room">Room 308</div></div><div class="routine-row"><div class="time">12:30–13:15</div><div><b>Digital Electronics</b><div class="meta">Theory</div></div><div class="room">Room 308</div></div></div>
+</div>
+<footer class="endnote">Study Plan<br><span class="credit">Design by Md Mahim Hossain</span></footer>
+</div>
+<div id="toast" class="toast" aria-live="polite"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

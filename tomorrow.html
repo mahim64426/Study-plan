@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Tomorrow — Study Plan</title>
+<link rel="stylesheet" href="assets/style.css">
+<noscript><style>.page-transition{display:none!important}</style></noscript>
+</head>
+<body>
+<div class="page-transition" id="pageTransition">
+  <div class="loader-wrap">
+    <div class="loader-light"><span></span><span></span><span></span></div>
+    <div class="loader-dark"></div>
+    <div class="loader-reading">📖</div>
+    <div class="label">লোড হচ্ছে…</div>
+  </div>
+</div>
+<nav class="navbar no-print">
+  <a class="nav-brand" href="index.html">📚 Study Plan</a>
+  <div class="nav-mid">
+    <a class="nav-link" href="index.html">🏠 Home</a><a class="nav-link" href="routine.html">📅 Routine</a><a class="nav-link" href="today.html">🔵 Today's Classes</a><a class="nav-link current" href="tomorrow.html">⏭ Tomorrow</a><a class="nav-link" href="pending.html">📌 Pending Work (জমে থাকা কাজ)</a><a class="nav-link" href="study-time.html">⏱ Study Time</a><a class="nav-link" href="history.html">🗂 History</a><a class="nav-link" href="uploaded-files.html">📎 Uploaded Files</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn small" id="themeBtn" onclick="cycleTheme()" type="button"></button>
+  </div>
+</nav>
+<div class="wrap">
+<div class="page-head"><h2>Tomorrow</h2></div>
+<section class="card" id="tomorrow">
+  <p class="meta no-js-only">স্বয়ংক্রিয়ভাবে আগামীকালের দিন সনাক্ত করতে জাভাস্ক্রিপ্ট প্রয়োজন। এই মুহূর্তে তা লোড হয়নি — সঠিক ক্লাস দেখতে <a class="btn small" href="routine.html">Routine</a> পেজে গিয়ে আগামীকালের দিনটি বেছে নাও।</p>
+  <div id="tomorrowClasses" class="class-list">
+    <div class="empty no-js-only">Automatic day detection needs JavaScript — please check the Routine page manually.</div>
+  </div>
+</section>
+<footer class="endnote">Study Plan<br><span class="credit">Design by Md Mahim Hossain</span></footer>
+</div>
+<div id="toast" class="toast" aria-live="polite"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>
